@@ -161,11 +161,11 @@ echo; echo "compressing '$signed_xml' to create '$compressed_signed_xml'....done
 echo "encrypting '$compressed_signed_xml'...."
 
 # Create 32 bytes random AES key
-TMP=`openssl rand 32 -hex`
+TMP=`openssl rand -hex 32`
 AESKEY=`echo ${TMP:0:64}`
 
 # Create 16 bytes random Initialization Vector (IV)
-TMP=`openssl rand 16 -hex`
+TMP=`openssl rand -hex 16`
 IV=`echo ${TMP:0:32}`
 
 echo; echo "AESKEY=$AESKEY"; echo "IV=$IV"; 
