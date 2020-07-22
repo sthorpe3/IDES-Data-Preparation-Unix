@@ -20,7 +20,7 @@ echo SENDER_PUBLIC_CERT_IN=$SENDER_PUBLIC_CERT_IN
 
 echo "*********************"
 
-if [[ -z $FATCA_PKG_IN || -z $MY_PRIVATE_KEYSTORE_PKCS12_IN || -z MY_PRIVATE_KEYSTORE_PWD_IN ]]; then
+if [[ -z $FATCA_PKG_IN || -z $MY_PRIVATE_KEYSTORE_PKCS12_IN || -z $MY_PRIVATE_KEYSTORE_PWD_IN ]]; then
     echo "please see sample_unpack.sh....set all these variables FATCA_PKG_IN, MY_PRIVATE_KEYSTORE_PKCS12_IN, MY_PRIVATE_KEYSTORE_PWD_IN, SENDER_PUBLIC_CERT_IN (optional - for signature validation)"
     exit 1
 fi
